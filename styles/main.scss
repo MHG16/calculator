@@ -10,7 +10,7 @@ body {
 
 .output-area {
 	background-color: #292929;
-	width: 16em;
+	width: 16.50em;
 
 	h1 {
 		color: #E0E0E0;
@@ -20,7 +20,12 @@ body {
 
 }
 
-.buttons-area div {
+.row {
+	width: 16.5em;  
+}
+
+
+.btn div {
 		width: 4em; 
 		float:left;
 		display:inline; 
