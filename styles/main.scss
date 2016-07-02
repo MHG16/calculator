@@ -35,18 +35,20 @@ body {
 		border: 1px solid #8E8E8E;
 		padding: .5em 0;  
 }
+	
+.btn .operand {
+			background-color: #F5923E;
+
+	h1 {
+		color: #E0E0E0;
+	}	
+}
+
 
 .btn .zero {
-		width: 8em; 
+		width: 8.1em; 
 		text-align:left; 
 }
-
-
-.operand {
-	background-color: #F5923E;
-	color: #E0E0E0; 	
-}
-
 
 
 
