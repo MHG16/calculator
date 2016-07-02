@@ -1,7 +1,7 @@
 body {
 	h1 {
 		color: #030303;
-		font-size: 1em;
+		font-size: 1.25em;
 		margin: 0;  
 		text-align: center;  
 	}
@@ -9,11 +9,12 @@ body {
 
 
 .output-area {
-	background-color: #292929;
+	background-color: #8E8E8E;
 	width: 16.50em;
+	padding-top: 1.5em;  
 
 	h1 {
-		font-size: 2em; 
+		font-size: 2.5em; 
 		color: #E0E0E0;
 		text-align:right; 
 		padding-right: .25em;  
@@ -31,8 +32,14 @@ body {
 		float:left;
 		display:inline; 
 		background-color: #E0E0E0; 
-		border: 1px solid #000000;
+		border: 1px solid #8E8E8E;
 		padding: .5em 0;  
+
+		.zero {
+			width: 8em; 
+			text-align:left;
+			padding-left: 1.25em;   
+		}
 }
 
 .operand {
@@ -40,9 +47,6 @@ body {
 	color: #E0E0E0; 	
 }
 
-.zero {
-	width: 8em; 
-}
 
 
 
