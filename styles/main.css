@@ -1,8 +1,10 @@
-body h1 {
-  color: #030303;
-  font-size: 1.25em;
-  margin: 0;
-  text-align: center; }
+body {
+  margin: 1em; }
+  body h1 {
+    color: #030303;
+    font-size: 1.25em;
+    margin: 0;
+    text-align: center; }
 
 .output-area {
   background-color: #8E8E8E;
