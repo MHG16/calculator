@@ -8,6 +8,7 @@ body h1 {
   background-color: #292929;
   width: 16.50em; }
   .output-area h1 {
+    font-size: 2em;
     color: #E0E0E0;
     text-align: right;
     padding-right: .25em; }
@@ -20,6 +21,14 @@ body h1 {
   float: left;
   display: inline;
   background-color: #E0E0E0;
-  border: 1px solid #000000; }
+  border: 1px solid #000000;
+  padding: .5em 0; }
+
+.operand {
+  background-color: #F5923E;
+  color: #E0E0E0; }
+
+.zero {
+  width: 8em; }
 
 /*# sourceMappingURL=main.css.map */
