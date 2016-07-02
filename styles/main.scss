@@ -15,22 +15,20 @@ body {
 	h1 {
 		color: #E0E0E0;
 		text-align:right; 
+		padding-right: .25em;  
 	}
 
 }
 
-.buttons-area {
-	background-color: #E0E0E0; 
-	width: 10em; 
-
-	div {
+.buttons-area div {
 		width: 4em; 
 		float:left;
 		display:inline; 
-		border: 1px solid #FFFFFF;
-	}
-
+		background-color: #E0E0E0; 
+		border: 1px solid #000000;
 }
+
+
 
 
 
