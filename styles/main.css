@@ -25,7 +25,7 @@ body {
   display: inline;
   background-color: #E0E0E0;
   border: 1px solid #8E8E8E;
-  padding: .5em 0; }
+  padding: .75em 0; }
 
 .btn .operand {
   background-color: #F5923E; }
