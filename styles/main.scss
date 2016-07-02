@@ -34,13 +34,13 @@ body {
 		background-color: #E0E0E0; 
 		border: 1px solid #8E8E8E;
 		padding: .5em 0;  
-
-		.zero {
-			width: 8em; 
-			text-align:left;
-			padding-left: 1.25em;   
-		}
 }
+
+.btn .zero {
+		width: 8em; 
+		text-align:left; 
+}
+
 
 .operand {
 	background-color: #F5923E;
