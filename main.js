@@ -43,35 +43,21 @@ var testNumLength = function(number) {
     total.text("0");
 
 //event listener for numbers
-$(".number").click(function(){
-		number += $(this).text();
-		total.text(number);
-		testNumLength(number);
-    });
+	$(".number").click(function(){
+			number += $(this).text();
+			total.text(number);
+			testNumLength(number);
+	    });
 
 //event listener for operators
-$(".operator").click(function(){
-	if (operator.text = "+") {
-		console.log("+");
-		newNumber = number;
-		number = "";
-	};
-	
-   });
-
-//event listener for equals
-$(".equals").click(function(){
-	if (operator === "+"){
-    		number = (parseInt(newNumber, 10) + parseInt(number, 10)).toString(10);
-
-	};
-
-	console.log("number:", number);
-	console.log("newNumber:", newNumber); 
-	console.log(number + newNumber); 
-	total.text(number); 
-
-	});
+	$(".operator").click(function(){
+		if (operator.text = "+") {
+			console.log("+");
+			newNumber = number;
+			number = "";
+		};
+		
+	   });
 
 //event listener for AC
 	$(".allClear").click(function(){
@@ -80,6 +66,32 @@ $(".equals").click(function(){
    	 	var operator = "";
     	total.text("0");
     });
+
+//event listener for equals
+	$(".equals").click(function(){
+		if (operator === "+"){
+	    	number = (parseInt(newNumber, 10) + parseInt(number, 10)).toString(10);
+	    	
+		} else if (operator ==="-") {
+			number = (parseInt(newNumber, 10) - parseInt(number, 10)).toString(10);
+
+
+		} else if (operator ==="x") {
+			number = (parseInt(newNumber, 10) * parseInt(number, 10)).toString(10);
+
+		} else if (operator ==="/") {
+			number = (parseInt(newNumber, 10) / parseInt(number, 10)).toString(10);
+
+		}
+
+		total.text(number); 
+
+		//clear out the number and newNumber;
+		number = "";
+    	newnumber = "";
+
+	});
+
 
 
 
