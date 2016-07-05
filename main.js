@@ -27,7 +27,7 @@ $(document).ready(function(){
 //function to check that output is not longer than 9 charcters
 
 // var testNumLength = function(number) {
-//         if (number.length > 15) {
+//         if (number.length > 9) {
 //             number = "";
 //             totaldiv.text("Err");
 //         };
@@ -39,7 +39,7 @@ $(document).ready(function(){
 	var number = "";
     var newNumber = "";
     var operator = "";
-    var total = $(".output-area");
+    var total = $(".result");
     total.text("0");
 
 //event listener for numbers
@@ -53,22 +53,22 @@ $(".number").click(function(){
 $(".operator").click(function(){
 	if (operator.text = 'x') {
 		console.log("x");
-		newnumber = number;
+		newNumber = number;
 		number = "";
-		total.text("0");
 	};
-
 	
    });
 
 //event listener for equals
 $(".equals").click(function(){
 	if (operator === "x"){
-    		number = (parseInt(newnumber, 10) * parseInt(number,10)).toString(10);
+    		number = (parseInt(newNumber, 10) * parseInt(number, 10)).toString(10);
 
 	};
 
-	total.text("number");
+	console.log("number:", number);
+	console.log("newNumber:", newNumber);  
+	total.text(number); 
 
 	});
 
