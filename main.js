@@ -51,13 +51,11 @@ var testNumLength = function(number) {
 
 //event listener for operators
 	$(".operator").click(function(){
-		if (operator.text = "+") {
-			console.log("+");
+		operator = $(this).text(); 
 			newNumber = number;
 			number = "";
-		};
+	});
 		
-	   });
 
 //event listener for AC
 	$(".allClear").click(function(){
@@ -68,10 +66,11 @@ var testNumLength = function(number) {
     });
 
 //event listener for equals
-	$(".equals").click(function(){
+	$(".equals").on("click", function(){
 		if (operator === "+"){
 	    	number = (parseInt(newNumber, 10) + parseInt(number, 10)).toString(10);
-	    	
+
+
 		} else if (operator ==="-") {
 			number = (parseInt(newNumber, 10) - parseInt(number, 10)).toString(10);
 
@@ -91,7 +90,6 @@ var testNumLength = function(number) {
     	newnumber = "";
 
 	});
-
 
 
 
