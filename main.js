@@ -24,14 +24,14 @@
 
 $(document).ready(function(){
 
-//function to check that output is not longer than 9 charcters
+//function to check that number is not longer than 9 charcters
 
-// var testNumLength = function(number) {
-//         if (number.length > 9) {
-//             number = "";
-//             totaldiv.text("Err");
-//         };
-//     };
+var testNumLength = function(number) {
+        if (number.length > 9) {
+            number = "";
+            total.text("Err");
+        };
+    };
 
 
 //variables to hold values
@@ -46,13 +46,13 @@ $(document).ready(function(){
 $(".number").click(function(){
 		number += $(this).text();
 		total.text(number);
-		//testNumLength(number);
+		testNumLength(number);
     });
 
 //event listener for operators
 $(".operator").click(function(){
-	if (operator.text = 'x') {
-		console.log("x");
+	if (operator.text = "+") {
+		console.log("+");
 		newNumber = number;
 		number = "";
 	};
@@ -61,16 +61,27 @@ $(".operator").click(function(){
 
 //event listener for equals
 $(".equals").click(function(){
-	if (operator === "x"){
-    		number = (parseInt(newNumber, 10) * parseInt(number, 10)).toString(10);
+	if (operator === "+"){
+    		number = (parseInt(newNumber, 10) + parseInt(number, 10)).toString(10);
 
 	};
 
 	console.log("number:", number);
-	console.log("newNumber:", newNumber);  
+	console.log("newNumber:", newNumber); 
+	console.log(number + newNumber); 
 	total.text(number); 
 
 	});
+
+//event listener for AC
+	$(".allClear").click(function(){
+		var number = "";
+   		var newNumber = "";
+   	 	var operator = "";
+    	total.text("0");
+    });
+
+
 
 });
 
