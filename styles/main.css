@@ -5,6 +5,8 @@ body {
     font-size: 1.25em;
     margin: 0;
     text-align: center; }
+  body div:hover {
+    background-color: #33BCFC; }
 
 .output-area {
   background-color: #8E8E8E;

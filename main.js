@@ -49,6 +49,26 @@ var testNumLength = function(number) {
 			testNumLength(number);
 	    });
 
+// event listener for +/-
+// requirements: 1 works on either number
+//2 switches positive to negative, and vice-versa
+//3 need only - to show up in output area
+
+// event listener for . (decimal point) 
+// requirements for .: 1 works on either number
+//2 put . anywhere before or in a number
+//3 display number with decimal 
+
+// event listener for %
+// requirements for %: 1 works with either number
+//2 multiply by 0.01
+//3 display number as a percent 
+
+// $(".percent").click(function(){
+// 	number = (parseInt(newNumber, 10) * parseInt(0.01)).toString(10);
+
+// }
+
 //event listener for operators
 	$(".operator").click(function(){
 		operator = $(this).text(); 
@@ -70,7 +90,6 @@ var testNumLength = function(number) {
 		if (operator === "+"){
 	    	number = (parseInt(newNumber, 10) + parseInt(number, 10)).toString(10);
 
-
 		} else if (operator ==="-") {
 			number = (parseInt(newNumber, 10) - parseInt(number, 10)).toString(10);
 
@@ -88,6 +107,7 @@ var testNumLength = function(number) {
 		//clear out the number and newNumber;
 		number = "";
     	newnumber = "";
+    	testNumLength(number);
 
 	});
 
